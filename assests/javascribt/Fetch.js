@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Load navigation and footer, then initialize search functionality
     (async function () {
+      await loadContent("header.html", "nav");
       await loadContent("Footer.html", "footer");
       // Initialize search functionality after navigation content is loaded
     })();
