@@ -1,0 +1,87 @@
+:root {
+  --dark-blue: rgb(15, 25, 55);
+  /* HEADER COLOR*/
+  --light-blue: rgb(61, 176, 228);
+  --gray: rgb(165, 167, 170);
+  --white: #ffffff;
+  --orange: #FF8C42;
+  --dark-gray: #333333;
+  /* FOOTER*/
+
+  --font-size-s: 0.9rem;
+  --fint-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --border-raduis-s: 8px;
+  --border-raduis-m: 30px;
+  --border-raduis-circle: 100px;
+  --site-max-width: 1300px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.bg-primary {
+  background-color: rgb(61, 176, 228) !important;
+}
+
+.bg-secondary {
+  background-color: rgb(165, 167, 170) !important;
+}
+
+.bg-main {
+  background-color: rgb(15, 25, 55);
+}
+
+.text-primary {
+  color: #be9900 !important;
+}
+
+.text-secondary {
+  color: #223263 !important;
+}
+
+.text-secondary-emphasis {
+  color: rgb(165, 167, 170) !important;
+}
+
+.btn-primary {
+  background-color: rgb(165, 167, 170);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #FF8C42;
+  color: #fff;
+}
+
+body {
+  background-color: var(--white);
+}
+
+/* 
+h1,
+h2,
+h3 {
+  color: var(--dark-blue);
+} */
+/* 
+button {
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 10px 20px;
+} */

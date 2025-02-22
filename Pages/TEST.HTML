@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .products-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .products-section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card i {
+            font-size: 2em;
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .product-card a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .product-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Generators</h3>
+                <a href="#">Read More ➔</a>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-umbrella"></i>
+                <h3>Canopies</h3>
+                <a href="#">Read More ➔</a>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-gas-pump"></i>
+                <h3>Fuel Tanks</h3>
+                <a href="#">Read More ➔</a>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-cubes"></i>
+                <h3>Base Frames</h3>
+                <a href="#">Read More ➔</a>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Tower Lights</h3>
+                <a href="#">Read More ➔</a>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-box"></i>
+                <h3>Mobil Pack Unit</h3>
+                <a href="#">Read More ➔</a>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Control Panels</h3>
+                <a href="#">Read More ➔</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for additional interactivity (if needed)
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('click', () => {
+                alert(`You clicked on: ${card.querySelector('h3').textContent}`);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+<div class="service-card">
+    <img src="/assests/images/Services1.jpeg" alt="Installation">
+    <h3>Installation Services</h3>
+    <h2>01</h2>
+    <p>Supply and installation of low-voltage (LV) and medium-voltage (MV) diesel generators. </p>
+    <button class="btn">More Info</button>
+</div>
+
+<div class="service-card">
+    <img src="/assests/images/services2.jpeg" alt="Maintenance">
+    <h3>Maintenance Services</h3>
+    <h2>02</h2>
+    <p>Routine and emergency maintenance services for diesel generators.</p>
+    <button class="btn">More Info</button>
+</div>
+
+<div class="service-card">
+    <img src="/assests/images/generators1.png" alt="Developing">
+    <h3>Power Equipments</h3>
+    <h2>03</h2>
+    <p>Supplying high-quality power equipment and related accessories.
+    </p>
+    <button class="btn">More Info</button>
+</div>
+<div class="service-card">
+    <img src="/assests/images/generators1.png" alt="Developing">
+    <h3>International Services</h3>
+    <h2>04</h2>
+    <p>Expanding services to include countries such as Kuwait and Iraq.
+    <pre>
+    </pre>
+    </p>
+    <button class="btn">More Info</button>
+</div>
+.service-card {
+background: white;
+padding: 20px;
+border-radius: 10px;
+width: 300px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+}
+
+
+.service-card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.service-card h3 {
+font-size: 22px;
+color: var(--dark-blue);
+margin: 5px 0;
+}
+
+
+.service-card h2 {
+font-size: 30px;
+color: var(--light-blue);
+margin: 0;
+}
+
+.service-card p {
+font-size: 16px;
+color: var(--dark-gray);
+margin: 5px 0 20px;
+}
+
+.btn {
+background-color: var(--light-blue) !important;
+color: var(--dark-blue) !important;
+border: 1px solid var(--dark-blue) !important;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+.btn:hover {
+background-color: var(--dark-blue) !important;
+color: var(--light-blue) !important;
+}
+
+@media screen and (max-width: 1024px) {
+.services {
+flex-direction: row;
+align-items: center;
+}
+}
+
+
+.whyus.in-view .image-left,
+.whyus.in-view .image-right {
+animation: In 1.5s ease forwards;
+}
+
+/* Hover Effects */
+.image-left:hover,
+.image-right:hover {
+transform: scale(1.1) rotate(-5deg);
+/* تكبير الصورة */
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.image-right:hover {
+transform: scale(1.1) rotate(5deg);
+/* تكبير الصورة */
+}
+
+.whyus-details {
+background: white;
+padding: 40px;
+border-radius: 15px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+max-width: 600px;
+margin: 0 auto;
+position: relative;
+z-index: 2;
+text-align: center;
+}
+
+.section-title {
+font-size: 36px;
+color: #2c3e50;
+/* Dark blue */
+margin-bottom: 20px;
+position: relative;
+}
+
+.section-title::after {
+content: '';
+display: block;
+width: 60px;
+height: 4px;
+background-color: #3498db;
+/* Blue accent */
+margin: 10px auto 0;
+border-radius: 2px;
+}
+
+.section-description {
+font-size: 18px;
+color: #7f8c8d;
+/* Gray text */
+margin-bottom: 30px;
+line-height: 1.6;
+}
+
+/* Buttons Styling */
+.buttons {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.button {
+padding: 15px 30px;
+font-size: 16px;
+font-weight: 600;
+text-transform: uppercase;
+border-radius: 50px;
+transition: all 0.3s ease;
+text-decoration: none;
+display: inline-block;
+}
+
+.order-now {
+background-color: #3498db;
+/* Blue */
+color: white;
+border: 2px solid #3498db;
+}
+
+.order-now:hover {
+background-color: #2980b9;
+/* Darker blue */
+border-color: #2980b9;
+transform: translateY(-3px);
+}
+
+.contact-us {
+background-color: transparent;
+color: #3498db;
+/* Blue */
+border: 2px solid #3498db;
+}
+
+.contact-us:hover {
+background-color: #3498db;
+/* Blue */
+color: white;
+transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.whyus-images {
+display: none;
+/* إخفاء الصور على الشاشات الصغيرة */
+}
+
+.whyus-details {
+padding: 20px;
+}
+
+.section-title {
+font-size: 28px;
+}
+
+.section-description {
+font-size: 16px;
+}
+
+.button {
+padding: 12px 24px;
+font-size: 14px;
+}
+}
+
+<!--Services section-->
+<section class="whyus">
+    <div class="section-content">
+        <div class="whyus-images">
+            <img src="/assests/images/" alt="Image 1" class="image-left">
+            <img src="https://via.placeholder.com/400x500" alt="Image 2" class="image-right">
+        </div>
+        <div class="whyus-details">
+            <h2 class="section-title">Why Smart Generators</h2>
+            <p class="section-description">
+                We provide reliable, efficient, and innovative power solutions tailored to meet your needs.
+                With years of expertise and a commitment to quality, we ensure your operations run smoothly.
+                <strong>We proudly import our high-quality generators from Alimar in Turkey</strong>, a trusted partner
+                known
+                for excellence in manufacturing.
+            </p>
+            <div class="buttons">
+                <a href="" class="button order-now">More Info</a>
+                <a href="" class="button contact-us">Our Services</a>
+            </div>
+        </div>
+    </div>
+</section>
