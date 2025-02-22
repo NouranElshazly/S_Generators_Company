@@ -1,4 +1,57 @@
+:root {
+  --dark-blue: rgb(15, 25, 55);
+  /* HEADER COLOR*/
+  --light-blue: rgb(61, 176, 228);
+  --gray: rgb(165, 167, 170);
+  --white: #ffffff;
+  --orange: #FF8C42;
+  --dark-gray: #333333;
+  /* FOOTER*/
+}
 
+.bg-primary {
+  background-color: rgb(61, 176, 228) !important;
+}
+.bg-secondary {
+  background-color: rgb(165, 167, 170) !important;
+}
+.bg-main{
+  background-color:rgb(15, 25, 55);
+}
+.text-primary {
+  color: #be9900 !important;
+}
+.text-secondary {
+  color: #223263 !important;
+}
+.text-secondary-emphasis {
+  color:  rgb(165, 167, 170) !important;
+}
+.btn-primary {
+  background-color:  rgb(165, 167, 170);
+  color: #fff;
+}
+.btn-secondary {
+  background-color: #FF8C42;
+  color: #fff;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--dark-gray);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-blue);
+}
+
+button {
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 10px 20px;
+}
 
 /* Footer Styles */
 footer {
@@ -7,38 +60,38 @@ footer {
   font-family: Arial, sans-serif;
 }
 
- h6 {
+footer h6 {
   color: #fff;
   margin-bottom: 20px;
 }
 
- a {
+footer a {
   color: #ccc;
   transition: color 0.3s;
 }
 
- p {
+footer p {
   color: #ccc;
 }
 
- a:hover {
+footer a:hover {
   color: var(--hover-color);
 }
 
-.social-icons a {
+footer .social-icons a {
   font-size: 20px;
   color: #ccc;
   transition: color 0.3s;
 }
 
-.social-icons a:hover {
+footer .social-icons a:hover {
   color: var(--hover-color);
 }
 
- .text-muted {
+footer .text-muted {
   color: #999 !important;
 }
 
- hr {
+footer hr {
   border-color: #444;
 }
