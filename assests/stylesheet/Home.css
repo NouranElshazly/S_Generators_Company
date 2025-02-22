@@ -64,6 +64,8 @@ body {
     height: 4px;
     background-color: rgb(48, 203, 255);
     position: fixed;
+    left: 0;
+    top: -5px;
 }
 
 .slide-text h3::after {
@@ -72,17 +74,9 @@ body {
     height: 4px;
     background-color: rgb(48, 203, 255);
     position: fixed;
-
-}
-
-.slide-text h3::before {
-    left: 0;
-    top: -5px;
-}
-
-.slide-text h3::after {
     right: 0;
     bottom: -5px;
+
 }
 
 .slide-text p {
@@ -150,7 +144,7 @@ body {
     .swiper-slide img {
         width: 100%;
         height: auto;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     .slide-text {
@@ -222,6 +216,30 @@ body {
         width: auto;
         bottom: 0;
     }
+
+    .service-card {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-text p {
+        display: none;
+    }
+
+    .see-more-btn {
+        background-color: var(--dark-blue);
+        color: white;
+        margin-inline: auto;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 10px;
+        align-items: center;
+    }
 }
 
 @keyframes fadeIn {
@@ -245,5 +263,298 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+
+}
+
+/* General Section Styling */
+.services-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-1 {
+    background-color: #e3f2fd;
+
+}
+
+.card-2 {
+    background-color: lightgrey;
+}
+
+.card-3 {
+    background-color: #e3f2fd;
+
+}
+
+.card-4 {
+    background-color: lightgray;
+
+}
+
+/* .number_icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.number_icon img {
+    width: 30px;
+    height: 30px;
+} */
+
+.section-text {
+    flex: 1;
+    text-align: left;
+
+}
+
+.section-text h5 {
+    font-size: 26px;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.section-text p {
+    font-size: 16px;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+.section-img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.section-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.see-more-btn {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.see-more-btn:hover {
+    background-color: var(--light-blue);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+
+}
+
+.section-title .arrow {
+    width: 50px;
+    height: 30px;
+}
+
+.section-title h2 {
+    color: var(--dark-blue);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Alimar Section Styling */
+.alimar-section {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+    /* Light gray background */
+    text-align: center;
+    overflow: hidden;
+    /* Ensure animations don't overflow */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.alimar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    opacity: 0;
+    /* Start hidden for fade-in animation */
+    transform: translateY(20px);
+    /* Start slightly below for slide-up animation */
+    animation: fadeInUp 1s ease-out forwards;
+    /* Apply animation */
+}
+
+.alimar-text {
+    flex: 1;
+    text-align: left;
+    /* Left alignment for English text */
+}
+
+.alimar-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideInLeft 0.8s ease-out 0.5s forwards;
+    /* Slide in from left */
+    opacity: 0;
+    /* Start hidden */
+}
+
+.highlight {
+    color: #007bff;
+    /* Blue color for highlighting */
+    font-weight: bold;
+}
+
+.alimar-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    /* Space above the button */
+    animation: fadeIn 1s ease-out 0.8s forwards;
+    /* Fade in animation */
+    opacity: 0;
+    /* Start hidden */
+}
+
+.alimar-image {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1s ease-out 0.5s forwards;
+    /* Zoom in animation */
+    opacity: 0;
+    /* Start hidden */
+}
+
+.alimar-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+    /* Hover effect for image */
+}
+
+.alimar-image:hover img {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
+/* See More Button Styling */
+.see-more-btn {
+    display: inline-block;
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1s ease-out 1s forwards;
+    /* Fade in animation */
+    opacity: 0;
+    /* Start hidden */
+}
+
+.see-more-btn:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .alimar-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .alimar-text {
+        text-align: center;
+    }
+
+    .alimar-image {
+        max-width: 100%;
     }
 }
