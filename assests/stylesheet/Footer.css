@@ -75,7 +75,15 @@ footer p {
 }
 
 footer a:hover {
-  color: var(--hover-color);
+  color: var(--light-blue);
+}
+
+.footer a:active {
+  color: gray !important;
+}
+
+footer a:focus {
+  color: gray !important;
 }
 
 footer .social-icons a {
@@ -95,3 +103,4 @@ footer .text-muted {
 footer hr {
   border-color: #444;
 }
+

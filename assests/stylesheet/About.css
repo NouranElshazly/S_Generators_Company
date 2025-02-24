@@ -31,4 +31,60 @@
     color: rgb(61, 176, 228);
     margin-bottom: 10px;
   }
+
+
+  
+/* Alimar Section Styling */
+#alimar {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+#alimar.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Logo Styling */
+.factory-logo {
+  max-width: 70%;
+  transition: transform 0.5s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; /* Ensure it stays above other elements */
+}
+
+/* Hover Effect: Scale without pushing text */
+.factory-logo:hover {
+  transform: scale(1.15);
+}
+
+/* Force transparent background */
+.factory-logo {
+  background: transparent !important; 
+}
+
+/* Default Button Styling */
+.btn-primary {
+  background-color: var(--light-blue) !important;
+  color: var(--white);
+  border: none;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.btn-primary:hover {
+  background-color: var(--dark-blue) !important; 
+  transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Active (Pressed) Effect */
+.btn-primary:active {
+  background-color: var(--dark-gray) !important;
+  transform: scale(0.95); /* Slightly shrink */
+}
+
+
   

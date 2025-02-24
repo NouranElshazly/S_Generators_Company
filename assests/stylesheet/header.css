@@ -99,7 +99,7 @@
 }
 
 .social-icons a:hover {
-    color: var (--light-blue);
+    color: var(--light-blue);
     transform: scale(1.2);
 }
 
