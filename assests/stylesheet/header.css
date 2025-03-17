@@ -1,25 +1,35 @@
 .navbar {
     background-color: var(--dark-blue);
-    padding: 10px 20px;
+    padding: 20px 30px; /* زيادة الـ padding */
+}
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    max-width: 250px; /* زيادة العرض الأقصى */
+    max-height: 100px; /* زيادة الارتفاع الأقصى */
+    overflow: hidden;
 }
 
 .navbar-brand img {
-    width: 250px;
+    max-width: 100%;
+    max-height: 80px; /* زيادة الارتفاع الأقصى للصورة */
+    width: auto;
     height: auto;
+    object-fit: contain;
 }
 
 .navbar-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-
+    gap: 30px; /* زيادة المسافة بين عناصر القائمة */
 }
 
 .nav-link {
     color: var(--white) !important;
     font-weight: var(--font-weight-semibold) !important;
+    font-size: 18px; /* زيادة حجم الخط */
 }
 
 .navbar-toggler {
@@ -54,7 +64,6 @@
     border-radius: 1px;
     padding: 10px 0;
     background-color: var(--white);
-
 }
 
 .dropdown-item {
@@ -75,7 +84,6 @@
     color: var(--white);
 }
 
-
 .social-icons {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -85,7 +93,6 @@
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: background-color 0.3s ease;
-
 }
 
 .social-icons:hover {
@@ -115,4 +122,14 @@
 .dropdown-item:focus {
     color: gray !important;
     background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        max-width: 200px;
+    }
+    
+    .navbar-brand img {
+        max-height: 60px;
+    }
 }

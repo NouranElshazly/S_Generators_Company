@@ -14,14 +14,18 @@
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
 
     <link rel="stylesheet" href="../assests/stylesheet/Contact.css" />
-    <script src="/assests/javascribt/contact.js"></script>
+    <script src="../assests/javascribt/contact.js"></script>
+    <link rel="stylesheet" href="../assests/stylesheet/services.css">
+    <script src="../assests/javascribt/spinner.js"></script>
+    <script src="../assests/javascribt/performance.js"></script>
 </head>
 
 <body>
-    <div id="overlay"></div>
-    <div id="loadingSpinner">
-        <img src="/assests/images/Screenshot from 2025-02-23 02-38-22.png" alt="Company Logo">
-    </div>
+    <!-- <div id="overlay">
+        <div id="loadingSpinner">
+            <img src="/S_Generators_Company/assests/images/شركة المولدات.png" alt="Loading...">
+        </div>
+    </div> -->
     <!-- Start Navbar -->
     <div id="nav"></div>
     <!-- end Navbar -->
@@ -33,7 +37,7 @@
         <h4>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="Homepage.html">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">ContactUs</li>
                 </ol>
             </nav>
@@ -44,9 +48,9 @@
         <div class="contactus">
             <!-- contact title -->
             <div class="section-title">
-                <img src="/assests/images/leftarrows.png" class="arrow" alt="left arrow">
+                <img src="../assests/images/leftarrows.png" class="arrow" alt="left arrow">
                 <h2>Contact Us</h2>
-                <img src="/assests/images/arrows.png" class="arrow" alt="right arrow">
+                <img src="../assests/images/arrows.png" class="arrow" alt="right arrow">
             </div>
         </div>
 
@@ -63,9 +67,9 @@
 
             <div class="container text-center my-5">
                 <div class="section-title">
-                    <img src="/assests/images/leftarrows.png" class="arrow" alt="left arrow">
+                    <img src="../assests/images/leftarrows.png" class="arrow" alt="left arrow">
                     <h2>Contact Us Details </h2>
-                    <img src="/assests/images/arrows.png" class="arrow" alt="right arrow">
+                    <img src="../assests/images/arrows.png" class="arrow" alt="right arrow">
                 </div>
                 <p>Get in touch with our team.</p>
 
@@ -124,124 +128,6 @@
         </div>
         <!-- end location and contact -->
 
-        <!-- form -->
-        <!-- FAQ Section -->
-        <div class="container my-5">
-            <div class="section-title">
-                <img src="/assests/images/leftarrows.png" class="arrow" alt="left arrow">
-                <h2>Frequancy Asked Questions</h2>
-                <img src="/assests/images/arrows.png" class="arrow" alt="right arrow">
-            </div>
-            <p class="text-center text-muted">Find answers to common questions below.</p>
-
-            <div class="accordion" id="faqAccordion">
-                <!-- Question 1 -->
-                <div class="accordion-item bg-dark-subtle">
-                    <h2 class="accordion-header" id="faq1">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#answer1">
-                            What services do you offer?
-                        </button>
-                    </h2>
-                    <div id="answer1" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            We specialize in power solutions, generators, and energy consulting services.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Question 2 -->
-                <div class="accordion-item bg-white">
-                    <h2 class="accordion-header" id="faq2">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#answer2">
-                            How can I request a quote?
-                        </button>
-                    </h2>
-                    <div id="answer2" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            You can call us directly or email us at info@kampower.com to get a quote.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Question 3 -->
-                <div class="accordion-item bg-dark-subtle">
-                    <h2 class="accordion-header" id="faq3">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#answer3">
-                            Where are you located?
-                        </button>
-                    </h2>
-                    <div id="answer3" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            Our main offices are in South Lebanon (Sidon) and the Hamriya Free Zone (Sharjah, UAE).
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Question 4 -->
-                <div class="accordion-item bg-white">
-                    <h2 class="accordion-header" id="faq4">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#answer4">
-                            Do you provide maintenance services?
-                        </button>
-                    </h2>
-                    <div id="answer4" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            Yes! We offer maintenance services to ensure your generators operate at peak performance.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Question 5 -->
-                <div class="accordion-item bg-dark-subtle">
-                    <h2 class="accordion-header" id="faq5">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#answer5">
-                            What are your business hours?
-                        </button>
-                    </h2>
-                    <div id="answer5" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            We are open Monday to Saturday from 10:00 AM to 6:00 PM.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Question 6 -->
-                <div class="accordion-item bg-white">
-                    <h2 class="accordion-header" id="faq6">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#answer6">
-                            How can I become a reseller or partner?
-                        </button>
-                    </h2>
-                    <div id="answer6" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            We welcome partnerships! Contact us at info@kampower.com for more details.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Question 7 -->
-                <div class="accordion-item bg-dark-subtle">
-                    <h2 class="accordion-header" id="faq7">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#answer7">
-                            Do you offer international shipping?
-                        </button>
-                    </h2>
-                    <div id="answer7" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            Yes, we ship our products internationally. Contact us for shipping details.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end form -->
 
 
     </div>

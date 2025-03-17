@@ -3,263 +3,142 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"="width=device-width, initial-scale=1.0">
     <title>Product </title>
-    <style>
-        .container {
-            max-width: 1200px;
-            margin: 100px auto;
-        }
-
-        .page-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            opacity: 0;
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        .page-header h1 {
-            font-size: 2.8rem;
-            color: #1e293b;
-            margin-bottom: 0.5rem;
-        }
-
-        .page-header h2 {
-            color: #64748b;
-            font-size: 1.4rem;
-            font-weight: 400;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 16px;
-            padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                box-shadow 0.4s ease;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: cardEntry 0.6s ease-out forwards;
-        }
-
-        .product-card:nth-child(1) {
-            animation-delay: 0.2s;
-        }
-
-        .product-card:nth-child(2) {
-            animation-delay: 0.4s;
-        }
-
-        .product-card:nth-child(3) {
-            animation-delay: 0.6s;
-        }
-
-        .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
-        }
-
-        .product-title {
-            color: #1e293b;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-
-        .product-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 40px;
-            height: 3px;
-            background: #3b82f6;
-            transform-origin: left;
-            transition: width 0.4s ease;
-        }
-
-        .product-card:hover .product-title::after {
-            width: 80px;
-        }
-
-        .product-description {
-            color: #64748b;
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-        }
-
-        .explore-more {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: #3b82f6;
-            text-decoration: none;
-            font-weight: 500;
-            position: relative;
-            overflow: hidden;
-            padding: 8px 0;
-        }
-
-        .explore-more::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #3b82f6;
-            transition: width 0.4s ease;
-        }
-
-        .explore-more:hover::before {
-            width: 100%;
-        }
-
-        .explore-more span {
-            transition: transform 0.4s ease;
-        }
-
-        .explore-more:hover span {
-            transform: translateX(4px);
-        }
-
-        .view-all {
-            text-align: center;
-            margin-top: 4rem;
-            opacity: 0;
-            animation: fadeInUp 0.8s ease-out 1s forwards;
-        }
-
-        .view-all a {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 1rem 2rem;
-            background: #3b82f6;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.4s ease;
-            transform: translateY(0);
-        }
-
-        .view-all a:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes cardEntry {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 1.5rem;
-            }
-
-            .page-header h1 {
-                font-size: 2rem;
-            }
-
-            .products-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-
-
+    <link rel="stylesheet" href="/S_Generators_Company/assests/stylesheet/style.css">
+    <link rel="stylesheet" href="../assests/stylesheet/product.css">
+    <script src="../assests/javascribt/spinner.js"></script>
+    <script src="../assests/javascribt/performance.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+  
     <!-- Start Navbar -->
     <div id="nav"></div>
     <!-- end Navbar -->
+      
+  <div class="cover-section">
+    <div id="hader-title">
+Products
+    </div>
+
+    <h4>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Products</li>
+        </ol>
+      </nav>
+    </h4>
+  </div>
     <div class="container">
         <div class="section-title page-header">
-            <img src="/assests/images/leftarrows.png" class="arrow" alt="left arrow">
-            <h2>Our Services</h2>
-            <img src="/assests/images/arrows.png" class="arrow" alt="right arrow">
+            <img src="../assests/images/leftarrows.png" class="arrow" alt="left arrow">
+            <h2>Our Products</h2>
+            <img src="../assests/images/arrows.png" class="arrow" alt="right arrow">
         </div>
 
         <div class="products-grid">
             <!-- Product Card 1 -->
-            <a href="ruggedized-ethernet.html" class="product-card">
-                <h3 class="product-title">Stele Ruggedized Ethernet Switches</h3>
-                <p class="product-description">
-                    Stele Tech offers a complete range of ruggedized ethernet for the food processing, industrial
-                    automation...
-                </p>
-                <div class="explore-more">
-                    <span>Explore More</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Diesel Generators</h3>
+                        <img src="../assests/images/DALL·E 2025-03-10 10.32.00 - A minimalist white line icon of a diesel generator.webp" alt="Diesel Generator">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Diesel Generators</h3>
+                        <p>High-quality diesel generators for all your power needs</p>
+                        <a href="https://en.alimar.com.tr/product-category/diesel-generators/" class="see-more-btn">See More</a>
+                    </div>
                 </div>
-            </a>
+            </div>
 
             <!-- Product Card 2 -->
-            <a href="automated-robotics.html" class="product-card">
-                <h3 class="product-title">Stele Automated Robotics System</h3>
-                <p class="product-description">
-                    Our projects range from new robot installation or redeployment of existing equipment to Cartesian
-                    Robots System...
-                </p>
-                <div class="explore-more">
-                    <span>Explore More</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Portable Generators</h3>
+                        <img src="../assests/images/portable-generator.jpg" alt="Portable Generator">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Portable Generators</h3>
+                        <p>Compact and efficient portable power solutions</p>
+                        <a href="https://en.alimar.com.tr/portable-generators/" class="see-more-btn">See More</a>
+                    </div>
                 </div>
-            </a>
+            </div>
 
             <!-- Product Card 3 -->
-            <a href="agriculture-logistics.html" class="product-card">
-                <h3 class="product-title">Agriculture Logistics and Automation</h3>
-                <p class="product-description">
-                    We offer full software solutions including back end and Lift for Optimised Field Logistics,
-                    Optimised Factory Drop-off...
-                </p>
-                <div class="explore-more">
-                    <span>Explore More</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Lighting Towers</h3>
+                        <img src="../assests/images/lighting-tower.jpg" alt="Lighting Tower">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Lighting Towers</h3>
+                        <p>Powerful lighting solutions for any situation</p>
+                        <a href="https://en.alimar.com.tr/lighting-towers/" class="see-more-btn">See More</a>
+                    </div>
                 </div>
-            </a>
-        </div>
+            </div>
 
-        <div class="view-all">
-            <a href="all-products.html">
-                <span>View All Products</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-            </a>
+            <!-- Product Card 4 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>MGS SETS</h3>
+                        <img src="../assests/images/power-box.jpg" alt="Power Box">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>MGS SETS </h3>
+                        <p>Reliable power distribution solutions</p>
+                        <a href="https://en.alimar.com.tr/mgs-sets/" class="see-more-btn">See More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 5 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Power Box</h3>
+                        <img src="../assests/images/power-box.jpg" alt="Power Box">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Power Box</h3>
+                        <p>Reliable power distribution solutions</p>
+                        <a href="https://en.alimar.com.tr/power-box/" class="see-more-btn">See More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 6 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Welding Generators</h3>
+                        <img src="../assests/images/power-box.jpg" alt="Power Box">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Welding Generators</h3>
+                        <p>Reliable power distribution solutions</p>
+                        <a href="https://en.alimar.com.tr/welding-generators/" class="see-more-btn">See More</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+          
+ 
+    <div class="view-all">
+        <a href="https://en.alimar.com.tr/product-category/diesel-generators/" class="view-all-btn mb-4">
+            <span>View All Products</span>
+             
+        </a>
     </div>
     <!-- footer -->
     <!-- Footer -->

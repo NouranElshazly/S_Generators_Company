@@ -10,16 +10,16 @@
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assests/stylesheet/services.css">
   <link rel="stylesheet" href="../assests/stylesheet/About.css">
-  <link rel="stylesheet" href="/assests/stylesheet/style.css">
+  <link rel="stylesheet" href="../assests/stylesheet/style.css">
+  <script src="../assests/javascribt/performance.js"></script>
+
+ 
 </head>
 
 <body class="d-flex flex-column min-vh-100"> <!-- Flex layout -->
-  <div id="overlay"></div>
-  <div id="loadingSpinner">
-    <img src="/assests/images/Screenshot from 2025-02-23 02-38-22.png" alt="Company Logo">
-  </div>
-  <!-- Navigation bar -->
+ 
   <div id="nav"></div>
   <div class="cover-section">
     <div id="hader-title">
@@ -29,7 +29,7 @@
     <h4>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="Homepage.html">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">About Us</li>
         </ol>
       </nav>
@@ -41,36 +41,40 @@
     <div class="container my-5">
 
       <!-- Our Story Section -->
-      <div class="row mb-5 align-items-center">
-        <div class="col-lg-6 text-center text-lg-start">
-          <div class="section-title">
-            <img src="/assests/images/leftarrows.png" class="arrow" alt="left arrow">
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <div class="section-title text-start">
+            <img src="../assests/images/leftarrows.png" class="arrow" alt="left arrow">
             <h2>Our Story</h2>
-            <img src="/assests/images/arrows.png" class="arrow" alt="right arrow">
+            <img src="../assests/images/arrows.png" class="arrow" alt="right arrow">
           </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis numquam ea similique aliquid veniam
-            eos
-            doloremque, natus quibusdam dignissimos, ut at eveniet reprehenderit consectetur! Assumenda facere veritatis
-            at ea aliquam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, quidem consequuntur rem quia aperiam
-            dolor totam qui praesentium laboriosam. Nostrum eum excepturi accusamus et fugiat quaerat eveniet quisquam.
-            Accusantium, eos.
-          </p>
+          <div class="story-content">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis numquam ea similique aliquid veniam
+              eos
+              doloremque, natus quibusdam dignissimos, ut at eveniet reprehenderit consectetur! Assumenda facere veritatis
+              at ea aliquam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, quidem consequuntur rem quia aperiam
+              dolor totam qui praesentium laboriosam. Nostrum eum excepturi accusamus et fugiat quaerat eveniet quisquam.
+              Accusantium, eos.
+            </p>
+          </div>
         </div>
-        <div class="col-lg-6 text-center">
-          <img src="/assests/images/شركة المولدات.png" alt="Logo" class="img-fluid rounded w-75">
+        <div class="col-lg-6">
+          <div class="about-image">
+            <img src="../assests/images/شركة المولدات.png" alt="Logo" class="img-fluid">
+          </div>
         </div>
       </div>
 
       <!-- Meet Our Team Section -->
       <div class="container">
         <div class="section-title">
-          <img src="/assests/images/leftarrows.png" class="arrow" alt="left arrow">
+          <img src="../assests/images/leftarrows.png" class="arrow" alt="left arrow">
           <h2>Meet Our Team</h2>
-          <img src="/assests/images/arrows.png" class="arrow" alt="right arrow">
+          <img src="../assests/images/arrows.png" class="arrow" alt="right arrow">
         </div>
         <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
 
@@ -86,7 +90,7 @@
             <div class="carousel-item active">
               <div class="row g-4">
                 <div class="col-md-6">
-                  <img src="/assests/images/person_7.png" alt="Amir Kamel" class="rounded-circle img-fluid w-50">
+                  <img src="../assests/images/person_7.png" alt="Amir Kamel" class="rounded-circle img-fluid w-50">
                   <h5>Amir Kamel</h5>
                   <p>CEO</p>
                   <div>
@@ -95,7 +99,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <img src="/assests/images/person_7.png" alt="Mahmoud Omar" class="rounded-circle img-fluid w-50">
+                  <img src="../assests/images/person_7.png" alt="Mahmoud Omar" class="rounded-circle img-fluid w-50">
                   <h5>Mahmoud Omar</h5>
                   <p>Managing Director</p>
                   <div>
@@ -109,7 +113,7 @@
             <div class="carousel-item">
               <div class="row g-4">
                 <div class="col-md-6">
-                  <img src="/assests/images/person_7.png" alt="Nouran Elshazly" class="rounded-circle img-fluid w-50">
+                  <img src="../assests/images/person_7.png" alt="Nouran Elshazly" class="rounded-circle img-fluid w-50">
                   <h5>Nouran Elshazly</h5>
                   <p>Sales Manager</p>
                   <div>
@@ -118,7 +122,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <img src="/assests/images/person_7.png" alt="Hesham Ahmed" class="rounded-circle img-fluid w-50">
+                  <img src="../assests/images/person_7.png" alt="Hesham Ahmed" class="rounded-circle img-fluid w-50">
                   <h5>Hesham Ahmed</h5>
                   <p>Team Leader</p>
                   <div>
@@ -132,7 +136,7 @@
             <div class="carousel-item">
               <div class="row g-4">
                 <div class="col-md-6">
-                  <img src="/assests/images/person_7.png" alt="Yasmeen Hassan" class="rounded-circle img-fluid w-50">
+                  <img src="../assests/images/person_7.png" alt="Yasmeen Hassan" class="rounded-circle img-fluid w-50">
                   <h5>Yasmeen Hassan</h5>
                   <p>After Sales Manager</p>
                   <div>
@@ -141,7 +145,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <img src="/assests/images/person_7.png" alt="Mark Maged" class="rounded-circle img-fluid w-50">
+                  <img src="../assests/images/person_7.png" alt="Mark Maged" class="rounded-circle img-fluid w-50">
                   <h5>Mark Maged</h5>
                   <p>Business Developer</p>
                   <div>
@@ -185,24 +189,6 @@
       </section>
 
 
-      <!-- Icons Section -->
-      <div class="row text-center mt-5 icons-section">
-        <div class="col-md-4 mb-4 icon-box">
-          <i class="fas fa-truck fa-3x"></i>
-          <h5 class="mt-2">Free and Fast Delivery</h5>
-          <p>Free delivery for all orders over $140</p>
-        </div>
-        <div class="col-md-4 mb-4 icon-box">
-          <i class="fas fa-headset fa-3x"></i>
-          <h5 class="mt-2">24/7 Customer Service</h5>
-          <p>Friendly 24/7 customer support</p>
-        </div>
-        <div class="col-md-4 mb-4 icon-box">
-          <i class="fas fa-sync-alt fa-3x"></i>
-          <h5 class="mt-2">Money Back Guarantee</h5>
-          <p>We return money within 30 days</p>
-        </div>
-      </div>
 
     </div>
   </main>

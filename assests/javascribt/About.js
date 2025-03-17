@@ -33,6 +33,6 @@ document.querySelectorAll('a').forEach(link => {
     setTimeout(() => {
       window.location.href = targetUrl;
 
-    }, 1500); // set timer for loading pages
+    }, 500); // set timer for loading pages
   });
 });

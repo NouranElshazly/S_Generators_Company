@@ -27,26 +27,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-window.addEventListener('beforeunload', function () {
-    document.getElementById('overlay').style.display = 'block';
-    document.getElementById('loadingSpinner').style.display = 'block';
-});
+ 
+document.addEventListener("DOMContentLoaded", function () {
+    let links = document.querySelectorAll("a");
 
-window.addEventListener('load', function () {
-    document.getElementById('overlay').style.display = 'none';
-    document.getElementById('loadingSpinner').style.display = 'none';
-});
+    links.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // منع التنقل المباشر
+            let targetUrl = this.href; // حفظ الرابط المستهدف
 
-document.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetUrl = this.href;
+            // عرض السبنر والخلفية
+            document.getElementById("overlay").classList.add("show");
+            document.getElementById("loadingSpinner").classList.add("show");
 
-        document.getElementById('overlay').style.display = 'block';
-        document.getElementById('loadingSpinner').style.display = 'block';
-
-        setTimeout(() => {
-            window.location.href = targetUrl;
-        }, 500); // set timer for loading pages
+            // تأخير بسيط جدًا لإعطاء إحساس بالسلاسة
+            setTimeout(function () {
+                window.location.href = targetUrl;
+            }, 700); // ⏳ تقليل الوقت إلى 0.7 ثانية لسرعة التحميل
+        });
     });
 });
