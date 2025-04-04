@@ -1,4 +1,7 @@
-html,
+html
+{
+  display: unset !important;
+}
 body {
     overflow-x: hidden;
     margin: 0;

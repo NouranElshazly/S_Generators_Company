@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl " >
 
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,13 @@
     <title>Header - Smart Generators</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../assests/stylesheet/style.css">
     <link rel="stylesheet" href="../assests/stylesheet/header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-</head>
+    
+ </head>
 
 <body>
     <!-- Header section -->
@@ -30,46 +31,56 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="Homepage.html">Home</a>
+                        <a class="nav-link" href="Homepage.html"><span lang="en">Home</span><span lang="ar">الرئيسية</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="About.html">About Us</a>
+                        <a class="nav-link" href="About.html"><span lang="en">About Us</span><span lang="ar">من نحن</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Support
+                            <span lang="en">Support</span><span lang="ar">الدعم</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="CustomerService.html">24/7 On-Call Services</a></li>
-                            <li><a class="dropdown-item" href="FAQ.html">FAQs</a></li>
-                            <!-- <li><a class="dropdown-item" href="#"> </a></li>
-                            <li><a class="dropdown-item" href="#"> </a></li> -->
+                            <li><a class="dropdown-item" href="CustomerService.html"><span lang="en">24/7 On-Call Services</span><span lang="ar">خدمة العملاء على مدار الساعة</span></a></li>
+                            <li><a class="dropdown-item" href="FAQ.html"><span lang="en">FAQs</span><span lang="ar">الأسئلة الشائعة</span></a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="product.html">Products</a>
+                        <a class="nav-link" href="product.html"><span lang="en">Products</span><span lang="ar">المنتجات</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Services.html">Services</a>
+                        <a class="nav-link" href="Services.html"><span lang="en">Services</span><span lang="ar">الخدمات</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact Us</a>
+                        <a class="nav-link" href="Contact.html"><span lang="en">Contact Us</span><span lang="ar">اتصل بنا</span></a>
                     </li>
                 </ul>
             </div>
 
-            <div class="social-icons collapse navbar-collapse justify-content-center" w-100 id="navbarNav"">
-                <a href=" https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <div class="social-icons collapse navbar-collapse justify-content-center" w-100 id="navbarNav">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
+
+            <select id="language-switch" style="width: auto;">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
         </div>
     </nav>
 
     <!-- Bootstrap JS -->
+    <script src="../assests/javascribt/translations.js" defer></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+   
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+html
+{
+  display: unset !important;
+}
 /* Service Cards */
 .service-card {
     background: var(--white);

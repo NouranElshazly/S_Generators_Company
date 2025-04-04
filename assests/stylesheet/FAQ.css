@@ -6,10 +6,11 @@
     font-size: 2.5rem;
     font-weight: bold;
   }
+  html
+  {
+    display: unset !important;
+  }
 
-body {
-    font-family: Arial, sans-serif;
-}
 .faq-container {
     display: flex;
     justify-content: center;

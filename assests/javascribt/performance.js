@@ -1,4 +1,3 @@
-// Lazy loading images
 document.addEventListener("DOMContentLoaded", function() {
     // Load cover section background
     setTimeout(() => {
@@ -28,9 +27,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 newScript.src = script.src;
                 document.body.appendChild(newScript);
                 script.remove();
-            }, 2000);
+            }, 0);      
         });
     };
 
     window.addEventListener('load', deferScripts);
 });
+
+// Ensure that language switch doesn't disrupt lazy loading
+function updateLazyImagesForLanguage() {
+    // When the language is switched, you may want to re-initialize image lazy loading if the images change.
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    images.forEach(img => {
+        // If necessary, re-set the data-src attribute for the language change
+        // Example: img.dataset.src = getNewImageSrcForLanguage(img, currentLanguage);
+        // Optionally, trigger lazy loading again for any images in the new language.
+    });
+}
