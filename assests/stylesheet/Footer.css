@@ -1,0 +1,42 @@
+/* Footer Styles */
+footer {
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+h6 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+p {
+  color: #ccc;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--hover-color);
+}
+
+.text-muted {
+  color: #999 !important;
+}
+
+hr {
+  border-color: #444;
+}

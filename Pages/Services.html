@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="../assests/stylesheet/style.css">
+    <link rel="stylesheet" href="../assests/stylesheet/services.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../assests/stylesheet/services.css">
+ 
+    <script src="../assests/javascribt/performance.js"></script>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../assests/stylesheet/services.css" as="style">
+    <link rel="preload" href="../assests/images/leftarrows.png" as="image">
+    <link rel="preload" href="../assests/images/arrows.png" as="image">
+    <link rel="stylesheet" href="../assests/stylesheet/header.css ">
+
+
+</head>
+
+<body>
+    <!-- <div id="overlay">
+        <div id="loadingSpinner">
+            <img src="/S_Generators_Company/assests/images/شركة المولدات.png" alt="Loading...">
+        </div>
+    </div> -->
+ 
+         <!-- Start Navbar -->
+    <div id="nav"></div>
+    <!-- end Navbar -->
+    <div class="cover-section">
+        <div id="hader-title">
+            Services
+        </div>
+
+        <h4>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Services</li>
+                </ol>
+            </nav>
+        </h4>
+    </div>
+
+    <div class="container">
+        <div class="section-title">
+            <img src="../assests/images/leftarrows.png" class="arrow" alt="left arrow">
+            <h2>Our Services</h2>
+            <img src="../assests/images/arrows.png" class="arrow" alt="right arrow">
+        </div>
+
+        <div id="service-list" class="services-container">
+            <!-- Service items will be loaded here by services.js -->
+        </div>
+
+        <div class="pagination">
+            <button id="prev-btn" disabled>Previous</button>
+            <span id="page-number">Page 1</span>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <!-- footer -->
+    <!-- Footer -->
+    <footer id="footer" class="mt-auto w-100 m-0 p-0"></footer>
+    <!-- end footer -->
+    <script src="../assests/javascribt/services.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery should load first -->
+    <script src="../assests/javascribt/translations.js" defer></script> <!-- Translations file with defer to load after DOM -->
+    <script src="../assests/javascribt/performance.js"></script>
+  
+    <script type="module" src="../assests/javascribt/Fetch.js"></script> <!-- Homepage script, after translations -->
+    
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap should load last -->
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,176 @@
+/* slider */
+ 
+.aboutus {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.aboutus h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #e4cfb6 inset;
+}
+
+/* start body */
+.team-slider img {
+  border-radius: 50%;
+  margin: auto;
+}
+
+.team-slider h5 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.team-slider p {
+  margin-bottom: 5px;
+}
+/* 
+.icons-section .icon-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.icons-section .icon-box i {
+  font-size: 40px;
+  color: rgb(61, 176, 228);
+  margin-bottom: 10px;
+} */
+
+.cover-section {
+  background-image: url(/assests/images/cover.jpg);
+  max-height: 500px;
+  width: 100%;  /* تغيير من 100vw لمنع السكرول الأفقي */
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.cover-section #hader-title {
+  margin: 120px;
+  font-size: 55px;
+  color: var(--white);
+  font-weight: 700;
+  width: 400px;
+  align-items: center;
+}
+
+.cover-section h4 {
+  margin: 100px;
+  color: var(--light-blue);
+}
+
+.about-image {
+  padding: 20px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.02);
+}
+
+.story-content {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  text-align: left;
+}
+
+.text-start {
+  text-align: left !important;
+}
+
+#teamCarousel {
+  padding: 40px 0;
+  margin: 40px auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  padding: 20px;
+}
+
+#teamCarousel .carousel-item {
+  padding: 20px 40px;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#teamCarousel img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto 20px;
+}
+
+.team-member:hover img {
+  transform: scale(1.05);
+}
+
+.factory-logo {
+  max-width: 400px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    text-align: center !important;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .story-content {
+    text-align: center;
+  }
+
+  .about-image {
+    margin-top: 30px;
+  }
+
+  .team-member img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cover-section #hader-title {
+    margin: 60px auto;
+    font-size: 40px;
+    width: auto;
+    text-align: center;
+  }
+  
+  .cover-section h4 {
+    margin: 40px auto;
+  }
+
+  .section-title img {
+    width: 40px;
+    height: 24px;
+  }
+}

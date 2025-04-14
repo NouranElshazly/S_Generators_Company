@@ -1,0 +1,112 @@
+.contactus {
+    text-align: left;
+    margin: 40px 0;
+}
+
+.contactus h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#contact p {
+    margin: 30px 0;
+}
+
+.btn-sub:hover,
+.btn-sub:active {
+    background-color: #be9900;
+}
+
+/* Custom CSS for Contact Details */
+.contact-box {
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    display: inline-block;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-box:hover .icon-box {
+    background-color: rgb(15, 25, 55) !important;
+    transform: scale(1.2);
+}
+
+.contact-box:hover .icon-box i {
+    color: rgb(165, 167, 170);
+}
+
+/* FAQ Section */
+.accordion-button {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: white;
+}
+
+.accordion-body {
+    font-size: 1rem;
+}
+
+.section-title {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.section-title .arrow {
+    width: 50px;
+    height: 30px;
+}
+
+.section-title h2 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.cover-section {
+    background-image: url(/assests/images/cover.jpg);
+    max-height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cover-section #hader-title {
+    margin: 120px;
+    font-size: 55px;
+    color: var(--white);
+    font-weight: 700;
+    width: 400px;
+    align-items: center;
+
+
+
+
+}
+
+
+.cover-section h4 {
+    margin: 100px;
+    color: var(--light-blue);
+}
